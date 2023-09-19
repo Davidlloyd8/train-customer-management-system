@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>TCMS (ADMIN HOMEPAGE)</title>
+    <link rel="stylesheet" href="css/admin dashboard.css" type="text/css" />
+  </head>
+  <body>
+    <main>
+      <div class="top-wrapper">
+        <div class="wrapper">
+          <!-- Begining of sidebar -->
+          <div class="sidebar">
+            <div class="img-wrapper">
+              <img src="images/person-dummy.jpg" alt="an image" class="img" />
+              <a class="edit" href="#" title="Edit Profile">
+                <i class="bi-pencil-square"></i>
+              </a>
+            </div>
+            <div class="links">
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  id="navbarDropdown"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  >Sub-Admin</a
+                >
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li>
+                    <a class="dropdown-item" href="#c-sub">Create Sub-Admin</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="edit subadmin.html"
+                      >Edit Sub-Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="activate subadmin.html"
+                      >Activate sub-Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="deactivate subadmin.html"
+                      >Deactivate Sub-Admin</a
+                    >
+                  </li>
+                  <li>
+                    <a class="dropdown-item" href="delete subadmin.html"
+                      >Delete Sub-Admin</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Create News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Trains On Session</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">View Customers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">View Complaint</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Feedback</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Create FAQ</a>
+              </li>
+            </div>
+            <a class="nav-link" id="signout" href="index.html">Sign Out</a>
+          </div>
+          <!-- End of sidebar -->
+          <div class="contain">
+            <!-- Begining of the top bar -->
+            <div class="top-box">
+              <a class="navbar-brand" href="#">TCMS</a>
+              <a class="nav-link" id="active" href="index.html">HOME</a>
+              <a class="nav-link" href="about.html">ABOUT</a>
+              <a class="nav-link" href="list of train.html">LIST OF TRAIN</a>
+              <a class="nav-link" href="news.html">NEWS</a>
+              <a class="nav-link" href="faq.html">FAQ</a>
+              <a class="nav-link" href="contact.html">CONTACT</a>
+              <a class="nav-link" href="dashboard.html">DASHBOARD</a>
+            </div>
+            <!-- End of the top bar -->
+
+            <!-- Begining of the main-content -->
+            <div class="last-box">
+              <div class="first-line">
+                <div class="first-box">
+                  <a href="#c-sub" id="first-box">
+                    <i class="fa fa-user-plus"></i>
+                    Create Sub-Admin
+                  </a>
+                </div>
+                <div class="first-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-user-edit"></i>
+                    Edit Sub-Admin
+                  </a>
+                </div>
+                <div class="first-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-user-check"></i>
+                    Activate Sub-Admin
+                  </a>
+                </div>
+                <div class="first-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-user-slash"></i>
+                    Deactivate Sub-Admin
+                  </a>
+                </div>
+              </div>
+              <div class="second-line">
+                <div class="s-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-user-minus"></i>
+                    Delete Sub-Admin
+                  </a>
+                </div>
+                <div class="s-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-newspaper"></i>
+                    Create News
+                  </a>
+                </div>
+                <div class="s-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-train"></i>
+                    Trains On Session
+                  </a>
+                </div>
+                <div class="s-box">
+                  <a href="#" id="first-box">
+                    <i class="fa fa-users"></i>
+                    View Customers
+                  </a>
+                </div>
+              </div>
+              <!-- End of main content -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
