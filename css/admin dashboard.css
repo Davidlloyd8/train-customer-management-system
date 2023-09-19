@@ -54,6 +54,15 @@ li {
     list-style: none;
 }
 
+li.nav-item {
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+#signout {
+    margin-left: 20px;
+}
+
 li a.nav-link {
     color: #ffffff;
     list-style-type: none;
@@ -99,7 +108,7 @@ li a.dropdown-item {
 .top-box {
     height: 50px;
     background-color: #30fe6c;
-    padding-top: 5px;
+    padding-top: 15px;
     padding-left: 30px;
     display: flex;
 }
@@ -115,6 +124,7 @@ li a.dropdown-item {
 .nav-link {
     color: #0C3B2E;
     font-weight: 600;
+    margin-right: 20px;
 }
 
 .nav-link:hover {
@@ -122,7 +132,7 @@ li a.dropdown-item {
 }
 
 #active {
-    margin-left: 200px;
+    margin-left: 300px;
 }
 
 .last-box {
