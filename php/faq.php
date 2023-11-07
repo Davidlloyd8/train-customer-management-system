@@ -12,6 +12,6 @@ if (isset($_POST['btnf'])) {
     $date_created = mysqli_real_escape_string($mycon, $_POST['date_created']);
     $str2 = "insert into faqtb(title,message,date_created) values('$title', '$message', '$date_created')";
     $cmd2 = mysqli_query($mycon, $str2) or die('Unable to Save FAQ');
-    $alert = "FAQ Addede Successfully";
+    $alert = "FAQ Added Successfully";
 }
 ?>
