@@ -18,6 +18,6 @@ if (isset($_POST['btncc'])) {
     $str2 = "insert into complainttb(name,email,type,complaint,review,date_review,feedback,date_created) values('$name', '$email', '$type', '$complaint', '$review',
     '$date_review', '$feedback', '$date_created')";
     $cmd2 = mysqli_query($mycon, $str2) or die('Unable to Submit Customer Complaint');
-    $alert = "Customer Complain submit Successfully";
+    $alert = "Customer Complain submitted Successfully";
 }
 ?>
