@@ -3,13 +3,15 @@ session_start();
 
 require_once('connection.php');
 
+$alert = '';
+
 if (isset($_POST['btnl'])) {
   $email = mysqli_real_escape_string($mycon, $_POST['email']);
   $pwd = mysqli_real_escape_string($mycon, $_POST['pass']);
   $email = stripslashes($email);
   $pwd = stripslashes($pwd);
 
-  $str = "select * from tcms where email = '$email'";
+  $str = "select * from usertb where email = '$email'";
   $cmd = mysqli_query($mycon, $str) or die('No Connection 404');
   $nr = mysqli_num_rows($cmd);
   if ($nr > 0) {

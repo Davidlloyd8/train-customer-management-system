@@ -1,6 +1,6 @@
 <?php
 session_start();
-// $alert = ""; $alert1 = "";
+$alert = ""; 
 
 include('auth.php');
 
@@ -42,21 +42,21 @@ if (isset($_POST['btnss'])) {
                 $pic = $fd . $nf . $_FILES['pic']['name'];
                 if (move_uploaded_file($_FILES['pic']['tmp_name'], $fd . $nf . $_FILES['pic']['name'])) {
 
-                    $str = "select * from tcms where email = '$email'";
+                    $str = "select * from usertb where email = '$email'";
                     $cmd = mysqli_query($mycon, $str) or die('No Connection');
                     $nr = mysqli_num_rows($cmd);
                     if ($nr > 0) {
                         $alert = $email . ' Has been used for another account!';
                     } else {
 
-                        // $str = "insert into admintb(name,email,phone,pics,address,password,acct_type,date_created,activation) values('$name', '$email', '$pnum', '$pic', 
-                        // '$address', '$pass', '$acct_type', '$date', '$activation')";
-                        // $cmd = mysqli_query($mycon, $str) or die ('Unable to Save');
+                        $str = "insert into admintb(name,email,phone,pics,address,password,acct_type,date_created,activation) values('$name', '$email', '$pnum', '$pic', 
+                        '$address', '$pass', '$acct_type', '$date', '$activation')";
+                        $cmd = mysqli_query($mycon, $str) or die ('Unable to Save');
 
                         $str = "insert into customertb(name,email,pics,password,acct_type,date_created) values('$name', '$email', '$pic', '$pass', '$acct_type', '$date')";
                         $cmd = mysqli_query($mycon, $str) or die('Unable to save');
 
-                        $str2 = "insert into usertb(name,email,password,acct_type,,activation) values('$name', '$email', '$pass', '$acct_type', '$activation')";
+                        $str2 = "insert into usertb(name,email,password,acct_type,activation) values('$name', '$email', '$pass', '$acct_type', '$activation')";
 
                         $cmd2 = mysqli_query($mycon, $str2) or die('Unable to Save');
                         $alert1 = 'Register Successfully';
