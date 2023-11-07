@@ -44,3 +44,4 @@ if (isset($_POST['btnl'])) {
     $alert = 'Incorrect Username/Password';
   }
 }
+?>

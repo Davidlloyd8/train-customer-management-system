@@ -19,6 +19,7 @@ if (isset($_POST['btnn'])) {
             if (move_uploaded_file($_FILES['image']['tmp_name'], $fd . $nf . $_FILES['image']['name'])) {
                 $str2 = "insert into newstb(title,news,image,author,date_created) values('$title', '$news', '$pic', '$author' ,'$date_created')";
                 $cmd2 = mysqli_query($mycon, $str2) or die('Unable to Save News');
+                $alert ="News created successfully";
             }
         } else {
             $alert = "Please Upload a valid JPEG or PNG file";
@@ -29,3 +30,5 @@ if (isset($_POST['btnn'])) {
         }
     }
 }
+
+?>
