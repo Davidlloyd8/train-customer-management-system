@@ -5,7 +5,7 @@ require_once('connection.php');
 
 $alert = '';
 
-if (isset($_POST['btncc'])) {
+if (isset($_POST['btnr'])) {
     $name = mysqli_real_escape_string($mycon, $_POST['name']);
     $email = mysqli_real_escape_string($mycon, $_POST['email']);
     $review = mysqli_real_escape_string($mycon, $_POST['review']);
