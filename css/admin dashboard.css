@@ -192,7 +192,7 @@ nav {
 
 .last-box {
     background-color: #6D9773;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../CSS/IMAGES/moving\ train.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/moving\ train.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -282,7 +282,7 @@ nav {
     width: 100%;
     min-height: 100vh;
     padding-top: 50px;
-    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../CSS/IMAGES/navigating.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url(../images/navigating.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
@@ -302,4 +302,103 @@ nav {
     color: #F58A2C;
     margin-left: 250px;
     margin-bottom: 50px;
+}
+
+@media (max-width: 900px) {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  nav #active {
+    margin-left: 0;
+  }
+
+  nav .nav-item {
+    margin-left: 0;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  .last-box {
+    padding-left: 70px;
+  }
+
+  .first-line,
+  .second-line {
+    grid-template-columns: repeat(2, 1fr);
+    width: 90%;
+    gap: 50px;
+  }
+
+  .second-line {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 600px) {
+  .last-box {
+    height: 100%;
+  }
+
+  .first-line,
+  .second-line {
+    grid-template-columns: repeat(1, 1fr);
+    width: 90%;
+  }
+}
+
+@media (max-width: 450px) {
+  .sidebar.open {
+    width: 230px;
+  }
+
+  .sidebar.open ~ .contain {
+    left: 230px;
+    width: calc(100% - 230px);
+  }
+
+  .last-box {
+    padding-left: 20px;
+  }
+
+  .last-box .first-line i,
+  .last-box .second-line i {
+    font-size: 30px;
+  }
+
+  #first-box {
+    width: 150px;
+    height: 150px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
+  }
+
+  .edit {
+    right: 50px;
+  }
+}
+
+@media (max-width: 375px) {
+  .last-box .first-line i,
+  .last-box .second-line i {
+    font-size: 10px;
+  }
+
+  .last-box .first-line .first-box,
+  .last-box .second-line .s-box {
+    width: 0px;
+    transition: all 0.9s;
+    border-radius: 10px;
+  }
+
+  #first-box {
+    width: 100px;
+    height: 170px;
+  }
 }
