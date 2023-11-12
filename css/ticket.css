@@ -1,0 +1,33 @@
+.top{
+    background-color: blueviolet;
+    width: 75%;
+    background-size:40px;
+    border-top-left-radius: 15px  ;
+    border-top-right-radius: 15px;
+    color: white;
+}.eco{
+    font-size: large;
+    color:white;
+}
+.card{
+   background-color: white;
+    width: 75%;
+    border: none;
+}
+.info{
+    width: 75%;
+}
+.from{
+    margin-top: 25px;
+} 
+
+.going{
+    margin-top: 25px;
+}
+.date{
+    margin-top: 25px;
+}
+img{
+    max-width: 100%;
+    max-height: 100%;
+}
