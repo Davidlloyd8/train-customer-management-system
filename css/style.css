@@ -9,6 +9,7 @@
 body {
     background-color: #30fe6c;
     background-color: #a8abab;
+    scroll-behavior: smooth;
 }
 
 .navbar-toggler {
@@ -25,20 +26,12 @@ body {
 }
 
 nav {
-    width: 100%;
-    background-color: #0C3B2E;
+    z-index: 10000;
+    backdrop-filter: blur(20px)
 }
 
-.navbar-brand {
-    margin-left: 30px;
-    font-size: 22px;
-    font-family: 'fantasy';
-    font-style: italic;
-    color: #F58A2C;
-}
-
-.navbar-brand:hover {
-    color: #F58A2C;
+.navbar-brand img {
+  width: 120px;
 }
 
 a.nav-link {

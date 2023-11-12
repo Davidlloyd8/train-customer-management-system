@@ -8,6 +8,7 @@
 
 body {
     background-color: #a8abac;
+    scroll-behavior: smooth;
 }
 
 .navbar-toggler {
@@ -24,20 +25,12 @@ body {
 }
 
 nav {
-    width: 100%;
-    background-color: #0C3B2E;
+    z-index: 10000;
+    backdrop-filter: blur(20px)
 }
 
-.navbar-brand {
-    margin-left: 30px;
-    font-size: 22px;
-    font-family: 'fantasy';
-    font-style: italic;
-    color: #F58A2C;
-}
-
-.navbar-brand:hover {
-    color: #F58A2C;
+.navbar-brand img {
+  width: 120px;
 }
 
 a.nav-link {
@@ -63,7 +56,7 @@ a.nav-link:hover {
 }
 
 .top-wrapper {
-    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../css/images/pple.webp);
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(../images/pple.webp);
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
