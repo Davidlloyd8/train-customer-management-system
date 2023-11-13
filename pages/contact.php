@@ -114,7 +114,7 @@
                     class="form-control"
                     placeholder="Your Message ..."
                     id="textarea"
-                    name="textarea"
+                    name="message"
                   ></textarea>
                 </div>
                 <input

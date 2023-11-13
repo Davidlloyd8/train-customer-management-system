@@ -1,13 +1,15 @@
 <?php
 if (isset($_POST['btns'])){
-    $fname = mysqli_real_escape_string($mycon, $_POST['fname']);
-    $lname = mysqli_real_escape_string($mycon, $_POST['lname']);
+    $name = mysqli_real_escape_string($mycon, $_POST['name']);
+    $phone = mysqli_real_escape_string($mycon, $_POST['phone']);
     $email = mysqli_real_escape_string($mycon, $_POST['email']);
+    $type = mysqli_real_escape_string($mycon, $_POST['subject']);
+    $msg = mysqli_real_escape_string($mycon, $_POST['message']);
 
 
-$to = "$email";
-$subject = 'Welcome Onboard';
-$from = "tcms@gmail.com";
+$to = 'tcms@gmail.com';
+$subject = "$type";
+$from = "$email";
  
 // To send HTML mail, the Content-type header must be set
 $headers  = 'MIME-Version: 1.0' . "\r\n";
@@ -21,8 +23,12 @@ $headers .= 'From: '.$from."\r\n".
 // Compose a simple HTML email message
 $message = '<html><body>';
 $message .= '<h1 style="color:#f40;">TRAIN CUSTOMER MANAGEMENT SYSTEM</h1>';
-$message .= "<p style='color:#080;font-size:18px;'>Thank you for signing up, $fname $lname</p>";
-$message .= "<p style='color:#080;font-size:18px;'>We built TCMS to help you streamline customer interactions and improve customer service for a train transportation company. This system allows customers to lodge complaints, book train travel, and enables administrators to review customer complaints and create sub-administrator accounts for managing</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Thank You For Contacting Us <br> Below is what you submitted</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Name: $name</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Email: $email</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Phone: $phone</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Message Title: $type</p>";
+$message .= "<p style='color:#080;font-size:18px;'>Message Body: $msg</p>";
 $message .= '</body></html>';
  
 // Sending email
