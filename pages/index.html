@@ -8,23 +8,23 @@
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
-/>
-<link
+    />
+    <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
       integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
-/>
+    />
     <title>TCMS (HOMEPAGE)</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../component/footer.css" type="text/css">
+    <link rel="stylesheet" href="../component/footer.css" type="text/css" />
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">
-          <img src="../images/TCMS 2.png">
+          <img src="../images/TCMS 2.png" />
         </a>
         <button
           class="navbar-toggler"
@@ -82,49 +82,44 @@
             >
               SIGN UP
             </button>
-            </ul>
+          </ul>
         </div>
       </div>
     </nav>
     <div
-              class="modal fade"
-              id="signupModal"
-              tabindex="-1"
-              aria-labelledby="signupModalLabel"
-              aria-hidden="true"
+      class="modal fade"
+      id="signupModal"
+      tabindex="-1"
+      aria-labelledby="signupModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <input type="text" placeholder="Full Name" />
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-seconodary"
+              data-bs-dismiss="modal"
             >
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">
-                      Sign Up
-                    </h5>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <input type="text" placeholder="Full Name" />
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-seconodary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                    <button type="button" class="btn btn-primary">
-                      Save Changes
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-        
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save Changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <main>
       <div class="first-wrapper">
@@ -150,7 +145,11 @@
         <div class="row">
           <div class="col-md-6">
             <div class="img-container">
-              <img src="../images/white-train.webp" class="image" alt="an image" />
+              <img
+                src="../images/white-train.webp"
+                class="image"
+                alt="an image"
+              />
             </div>
           </div>
           <div class="col-md-6">
@@ -167,106 +166,132 @@
       </div>
 
       <section class="trains-section">
-      <div class="mid-content">
-        <div class="box">
-        <div class="first">
-          <h6 class="head6">Short Distance Train</h6>
-          <div class="img-container">
-            <img src="../images/w-b-train.webp" class="img" alt="an image" />
+        <div class="mid-content">
+          <div class="box">
+            <div class="first">
+              <h6 class="head6">Short Distance Train</h6>
+              <div class="img-container">
+                <img
+                  src="../images/w-b-train.webp"
+                  class="img"
+                  alt="an image"
+                />
+              </div>
+              <p class="model">TCMS 3500</p>
+              <p class="speed">350km/hr</p>
+              <p class="date">17<sup>th</sup> August 2003</p>
+            </div>
+            <div class="second">
+              <h6 class="head6">Long Distance Train</h6>
+              <div class="img-container">
+                <img src="../images/b.train3.webp" class="img" alt="an image" />
+              </div>
+              <p class="model">TCMS 4500</p>
+              <p class="speed">300km/hr</p>
+              <p class="date">3<sup>rd</sup> June 2004</p>
+            </div>
+            <div class="third">
+              <h6 class="head6">Low Speed Train</h6>
+              <div class="img-container">
+                <img
+                  src="../images/blue-red-train.jpg"
+                  class="img"
+                  alt="an image"
+                />
+              </div>
+              <p class="model">TCMS 5000</p>
+              <p class="speed">350km/hr</p>
+              <p class="date">22<sup>nd</sup> March 2005</p>
+            </div>
+            <div class="fourth">
+              <h6 class="head6">High Speed Train</h6>
+              <div class="img-container">
+                <img
+                  src="../images/b-g-b-train.webp"
+                  class="img"
+                  alt="an image"
+                />
+              </div>
+              <p class="model">TCMS 5500</p>
+              <p class="speed">200km/hr</p>
+              <p class="date">4<sup>th</sup> January 2006</p>
+            </div>
           </div>
-          <p class="model">TCMS 3500</p>
-          <p class="speed">350km/hr</p>
-          <p class="date">17<sup>th</sup> August 2003</p>
         </div>
-        <div class="second">
-          <h6 class="head6">Long Distance Train</h6>
-          <div class="img-container">
-            <img src="../images/b.train3.webp" class="img" alt="an image">
-          </div>
-          <p class="model">TCMS 4500</p>
-          <p class="speed">300km/hr</p>
-          <p class="date">3<sup>rd</sup> June 2004</p>
-        </div>
-        <div class="third">
-          <h6 class="head6">Low Speed Train</h6>
-          <div class="img-container">
-            <img src="../images/blue-red-train.jpg" class="img" alt="an image">
-          </div>
-          <p class="model">TCMS 5000</p>
-          <p class="speed">350km/hr</p>
-          <p class="date">22<sup>nd</sup> March 2005</p>
-        </div>
-         <div class="fourth">
-          <h6 class="head6">High Speed Train</h6>
-          <div class="img-container">
-            <img src="../images/b-g-b-train.webp" class="img" alt="an image">
-          </div>
-          <p class="model">TCMS 5500</p>
-          <p class="speed">200km/hr</p>
-          <p class="date">4<sup>th</sup> January 2006</p>
-        </div>
-        </div>
-      </div>
       </section>
-      
+
       <section class="news-section">
         <h3 class="h3">LATEST NEWS</h3>
-          <div class="container" id="news-box">
-        <div class="row" id="first_wrapper">
-          <div class="col-md-4" id="first-box">
-            <div class="img-container">
-              <img src="../images/tech sis.webp" class="image" alt="An image" />
+        <div class="container" id="news-box">
+          <div class="row" id="first_wrapper">
+            <div class="col-md-4" id="first-box">
+              <div class="img-container">
+                <img
+                  src="../images/tech sis.webp"
+                  class="image"
+                  alt="An image"
+                />
+              </div>
+              <div class="content">
+                <h6 class="heading-p">
+                  Over ride the digital divide with additional
+                </h6>
+                <p class="content-p">
+                  Our Customers have been complaining about the customer service
+                  representatives saying some of them are so rude to ....
+                </p>
+                <p class="read">
+                  <i class="fa fa-arrow-right" id="right">
+                    <a class="read-more" href="more news.html">Read More</a></i
+                  >
+                </p>
+              </div>
             </div>
-            <div class="content">
-              <h6 class="heading-p">
-                Over ride the digital divide with additional
-              </h6>
-              <p class="content-p">
-                Our Customers have been complaining about the customer service
-                representatives saying some of them are so rude to ....
-              </p>
-              <p class="read">
-                <i class="fa fa-arrow-right" id="right">
-                   <a class="read-more" href="more news.html">Read More</a></i>
-              </p>
+            <div class="col-md-4" id="second-box">
+              <div class="img-container">
+                <img
+                  src="../images/tech sis.webp"
+                  class="image"
+                  alt="An image"
+                />
+              </div>
+              <div class="content">
+                <h6 class="heading-p">
+                  Over ride the digital divide with additional
+                </h6>
+                <p class="content-p">
+                  Our Customers have been complaining about the customer service
+                  representatives saying some of them are so rude to ....
+                </p>
+                <p class="read">
+                  <i class="fa fa-arrow-right" id="right">
+                    <a class="read-more" href="more news.html">Read More</a>
+                  </i>
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="col-md-4" id="second-box">
-            <div class="img-container">
-              <img src="../images/tech sis.webp" class="image" alt="An image" />
-            </div>
-            <div class="content">
-              <h6 class="heading-p">
-                Over ride the digital divide with additional
-              </h6>
-              <p class="content-p">
-                Our Customers have been complaining about the customer service
-                representatives saying some of them are so rude to ....
-              </p>
-              <p class="read">
-                <i class="fa fa-arrow-right" id="right">
-                  <a class="read-more" href="more news.html">Read More</a>
-                </i>
-              </p>
-            </div>
-          </div>
-          <div class="col-md-4" id="third-box">
-            <div class="img-container">
-              <img src="../images/tech sis.webp" class="image" alt="An image" />
-            </div>
-            <div class="content">
-              <h6 class="heading-p">
-                Over ride the digital divide with additional
-              </h6>
-              <p class="content-p">
-                Our Customers have been complaining about the customer service
-                representatives saying some of them are so rude to ....
-              </p>
-              <p class="read">
-                <i class="fa fa-arrow-right" id="right">
-                  <a class="read-more" href="more news.html">Read More</a>
-                </i>
-              </p>
+            <div class="col-md-4" id="third-box">
+              <div class="img-container">
+                <img
+                  src="../images/tech sis.webp"
+                  class="image"
+                  alt="An image"
+                />
+              </div>
+              <div class="content">
+                <h6 class="heading-p">
+                  Over ride the digital divide with additional
+                </h6>
+                <p class="content-p">
+                  Our Customers have been complaining about the customer service
+                  representatives saying some of them are so rude to ....
+                </p>
+                <p class="read">
+                  <i class="fa fa-arrow-right" id="right">
+                    <a class="read-more" href="more news.html">Read More</a>
+                  </i>
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -274,38 +299,38 @@
     </main>
 
     <div class="footer">
-  <div class="container p-3">
-    <div class="row">
-      <div class="col-lg-6">
-        <h1>TCMS</h1>
-      </div>
-      <div class="col-lg-3">
-        <ul class="footer-list">
-          <li><a href="#">Information</a></li>
-          <li><a href="#">About</a></li>
-          <li><a href="#">List of Trains</a></li>
-          <li><a href="#">News</a></li>
-        </ul>
-      </div>
-      <div class="col-lg-3">
-        <ul class="footer-list">
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">+234 816 2248 092</a></li>
-          <li><a href="#">tcms@gmail.com</a></li>
-        </ul>
-        <i class="fa-brands fa-facebook"></i>
-        <i class="fa-solid fa-envelope"></i>
-        <i class="fa-brands fa-instagram"></i>
-        <i class="fa-brands fa-x-twitter"></i>
-      </div>
-      <div class="col-lg-12">
-        <p class="text-center mt-3">
-          2023 &copy; TCMS <span class="vr"></span> All Right Reserved
-        </p>
+      <div class="container p-3">
+        <div class="row">
+          <div class="col-lg-6">
+            <h1>TCMS</h1>
+          </div>
+          <div class="col-lg-3">
+            <ul class="footer-list">
+              <li><a href="#">Information</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">List of Trains</a></li>
+              <li><a href="#">News</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <ul class="footer-list">
+              <li><a href="#">Contact</a></li>
+              <li><a href="#">+234 816 2248 092</a></li>
+              <li><a href="#">tcms@gmail.com</a></li>
+            </ul>
+            <i class="fa-brands fa-facebook"></i>
+            <i class="fa-solid fa-envelope"></i>
+            <i class="fa-brands fa-instagram"></i>
+            <i class="fa-brands fa-x-twitter"></i>
+          </div>
+          <div class="col-lg-12">
+            <p class="text-center mt-3">
+              2023 &copy; TCMS <span class="vr"></span> All Right Reserved
+            </p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
   </body>
