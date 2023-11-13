@@ -62,6 +62,8 @@
               </div>
             </div>
           </div>
+          <?php require_once('../php/EmailConfig/contact.php');
+          require_once('../php/EmailConfig/contact_cus.php'); ?>
 
           <div class="form-box">
             <h3 class="heading3">Send Message</h3>
