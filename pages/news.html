@@ -17,6 +17,7 @@
     />
     <title>TCMS (NEWS)</title>
     <link rel="stylesheet" href="../css/news.css" type="text/css" />
+    <link rel="stylesheet" href="../component/navbar.css" type="text/css">
     <link rel="stylesheet" href="../component/footer.css" type="text/css" />
   </head>
   <body>
@@ -64,10 +65,16 @@
             <li class="nav-item">
               <a class="nav-link" href="../pages/contact.html">CONTACT</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="">LOG IN</a>
-            </li>
 
+            <button
+              type="button"
+              class="btn"
+              id="login"
+              data-bs-toggle="modal"
+              data-bs-target="#loginModal"
+            >
+              LOG IN
+            </button>
             <button
               type="button"
               class="btn"
