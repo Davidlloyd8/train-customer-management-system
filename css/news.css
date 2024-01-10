@@ -12,50 +12,6 @@ body {
     scroll-behavior: smooth;
 }
 
-.navbar-toggler {
-    color: #F58A2C;
-}
-
-.nav-item {
-    margin-left: 20px;
-    font-weight: 500;
-}
-
-#active {
-    margin-left: 350px;
-}
-
-nav {
-    z-index: 10000;
-    backdrop-filter: blur(20px)
-}
-
-.navbar-brand img {
-  width: 120px;
-}
-
-a.nav-link {
-    color: #ffffff;
-}
-
-a.nav-link:hover {
-    color: #c4c5c5;
-    border-bottom: 2px solid #c4c5c5;
-}
-
-#signup {
-    font-weight: 600;
-    color: #ffffff;
-    margin-left: 20px;
-    width: 100px;
-    height: 40px;
-    background-color: #F58A2C;
-}
-
-#signup:hover {
-    opacity: 0.9;
-}
-
 .top-wrapper {
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url(../images/shake\ 2.webp);
     background-repeat: no-repeat;

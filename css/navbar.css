@@ -42,7 +42,8 @@ a.nav-link:hover {
   border-bottom: 2px solid #c4c5c5;
 }
 
-#signup {
+#signup,
+#login {
   font-weight: 600;
   color: #ffffff;
   margin-left: 20px;
@@ -51,6 +52,11 @@ a.nav-link:hover {
   height: 40px;
 }
 
-#signup:hover {
+#login {
+    background-color: #FFBA00;
+}
+
+#signup:hover,
+#login:hover {
   opacity: 0.9;
 }

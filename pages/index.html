@@ -18,7 +18,8 @@
     />
     <title>TCMS (HOMEPAGE)</title>
     <link rel="stylesheet" href="../css/style.css" type="text/css" />
-    <link rel="stylesheet" href="../component/footer.css" type="text/css" />
+    <link rel="stylesheet" href="../component/navbar.css" type="text/css">
+    <link rel="stylesheet" href="../component/footer.css" type="text/css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg fixed-top">
@@ -86,43 +87,7 @@
         </div>
       </div>
     </nav>
-    <div
-      class="modal fade"
-      id="signupModal"
-      tabindex="-1"
-      aria-labelledby="signupModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <input type="text" placeholder="Full Name" />
-          </div>
-          <div class="modal-footer">
-            <button
-              type="button"
-              class="btn btn-seconodary"
-              data-bs-dismiss="modal"
-            >
-              Close
-            </button>
-            <button type="button" class="btn btn-primary">Save Changes</button>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <main>
-      <div class="first-wrapper">
+    <div class="first-wrapper">
         <div class="text-box">
           <h3 class="heading3">
             Instead of being a destination, life happens to be a journey !!!
@@ -140,8 +105,7 @@
           </div>
         </div>
       </div>
-
-      <div class="container-fluid" id="first-content">
+      <div class="container" id="first-content">
         <div class="row">
           <div class="col-md-6">
             <div class="img-container">
@@ -166,58 +130,80 @@
       </div>
 
       <section class="trains-section">
-        <div class="mid-content">
-          <div class="box">
-            <div class="first">
+        <div class="container" id="train-section">
+          <h3 class="h3">LIST OF TRAINS</h3>
+          <div class="row">
+            <div class="col-lg-4" id="first">
               <h6 class="head6">Short Distance Train</h6>
               <div class="img-container">
-                <img
-                  src="../images/w-b-train.webp"
-                  class="img"
-                  alt="an image"
-                />
-              </div>
-              <p class="model">TCMS 3500</p>
-              <p class="speed">350km/hr</p>
-              <p class="date">17<sup>th</sup> August 2003</p>
+            <img src="../images/w-b-train.webp" class="img" alt="an image" />
+          </div>
+          <p class="model">TCMS 3500</p>
+          <p class="speed">350km/hr</p>
+          <p class="date">17<sup>th</sup> August 2003</p>
             </div>
-            <div class="second">
+            <div class="col-lg-4" id="second">
               <h6 class="head6">Long Distance Train</h6>
               <div class="img-container">
-                <img src="../images/b.train3.webp" class="img" alt="an image" />
+                <img src="../images/b.train3.webp" class="img" alt="an image">
               </div>
               <p class="model">TCMS 4500</p>
               <p class="speed">300km/hr</p>
               <p class="date">3<sup>rd</sup> June 2004</p>
             </div>
-            <div class="third">
+            <div class="col-lg-4" id="third">
               <h6 class="head6">Low Speed Train</h6>
               <div class="img-container">
-                <img
-                  src="../images/blue-red-train.jpg"
-                  class="img"
-                  alt="an image"
-                />
+                <img src="../images/blue-red-train.jpg" class="img" alt="an image">
               </div>
               <p class="model">TCMS 5000</p>
               <p class="speed">350km/hr</p>
               <p class="date">22<sup>nd</sup> March 2005</p>
             </div>
-            <div class="fourth">
-              <h6 class="head6">High Speed Train</h6>
-              <div class="img-container">
-                <img
-                  src="../images/b-g-b-train.webp"
-                  class="img"
-                  alt="an image"
-                />
-              </div>
-              <p class="model">TCMS 5500</p>
-              <p class="speed">200km/hr</p>
-              <p class="date">4<sup>th</sup> January 2006</p>
-            </div>
+          </div>
+          <div class="text-center mt-3">
+          <a class="special btn" id="train" href="list of train.html">
+            View All Trains
+          </a>
+        </div>
+        </div>
+      <!--<div class="mid-content">
+        <div class="box">
+        <div class="first">
+          <h6 class="head6">Short Distance Train</h6>
+          <div class="img-container">
+            <img src="../images/w-b-train.webp" class="img" alt="an image" />
           </div>
         </div>
+        <div class="second">
+          <h6 class="head6">Long Distance Train</h6>
+          <div class="img-container">
+            <img src="../images/b.train3.webp" class="img" alt="an image">
+          </div>
+          <p class="model">TCMS 4500</p>
+          <p class="speed">300km/hr</p>
+          <p class="date">3<sup>rd</sup> June 2004</p>
+        </div>
+        <div class="third">
+          <h6 class="head6">Low Speed Train</h6>
+          <div class="img-container">
+            <img src="../images/blue-red-train.jpg" class="img" alt="an image">
+          </div>
+          <p class="model">TCMS 5000</p>
+          <p class="speed">350km/hr</p>
+          <p class="date">22<sup>nd</sup> March 2005</p>
+        </div>
+         <div class="fourth">
+          <h6 class="head6">High Speed Train</h6>
+          <div class="img-container">
+            <img src="../images/b-g-b-train.webp" class="img" alt="an image">
+          </div>
+          <p class="model">TCMS 5500</p>
+          <p class="speed">200km/hr</p>
+          <p class="date">4<sup>th</sup> January 2006</p>
+        </div>
+        </div>
+      </div>-->
       </section>
 
       <section class="news-section">
@@ -247,51 +233,54 @@
                 </p>
               </div>
             </div>
-            <div class="col-md-4" id="second-box">
-              <div class="img-container">
-                <img
-                  src="../images/tech sis.webp"
-                  class="image"
-                  alt="An image"
-                />
-              </div>
-              <div class="content">
-                <h6 class="heading-p">
-                  Over ride the digital divide with additional
-                </h6>
-                <p class="content-p">
-                  Our Customers have been complaining about the customer service
-                  representatives saying some of them are so rude to ....
-                </p>
-                <p class="read">
-                  <i class="fa fa-arrow-right" id="right">
-                    <a class="read-more" href="more news.html">Read More</a>
-                  </i>
-                </p>
-              </div>
+            <div class="content">
+              <h6 class="heading-p">
+                Over ride the digital divide with additional
+              </h6>
+              <p class="content-p">
+                Our Customers have been complaining about the customer service
+                representatives saying some of them are so rude to ....
+              </p>
+              <p class="read">
+                <i class="fa fa-arrow-right" id="right"></i>
+                  <a class="read-more" href="more news.html">Read More</a>
+              </p>
             </div>
-            <div class="col-md-4" id="third-box">
-              <div class="img-container">
-                <img
-                  src="../images/tech sis.webp"
-                  class="image"
-                  alt="An image"
-                />
-              </div>
-              <div class="content">
-                <h6 class="heading-p">
-                  Over ride the digital divide with additional
-                </h6>
-                <p class="content-p">
-                  Our Customers have been complaining about the customer service
-                  representatives saying some of them are so rude to ....
-                </p>
-                <p class="read">
-                  <i class="fa fa-arrow-right" id="right">
-                    <a class="read-more" href="more news.html">Read More</a>
-                  </i>
-                </p>
-              </div>
+          </div>
+          <div class="col-md-4" id="second-box">
+            <div class="img-container">
+              <img src="../images/tech sis.webp" class="image" alt="An image" />
+            </div>
+            <div class="content">
+              <h6 class="heading-p">
+                Over ride the digital divide with additional
+              </h6>
+              <p class="content-p">
+                Our Customers have been complaining about the customer service
+                representatives saying some of them are so rude to ....
+              </p>
+              <p class="read">
+                <i class="fa fa-arrow-right" id="right"></i>
+                <a class="read-more" href="more news.html">Read More</a>
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4" id="third-box">
+            <div class="img-container">
+              <img src="../images/tech sis.webp" class="image" alt="An image" />
+            </div>
+            <div class="content">
+              <h6 class="heading-p">
+                Over ride the digital divide with additional
+              </h6>
+              <p class="content-p">
+                Our Customers have been complaining about the customer service
+                representatives saying some of them are so rude to ....
+              </p>
+              <p class="read">
+                <i class="fa fa-arrow-right" id="right"></i>
+                <a class="read-more" href="more news.html">Read More</a>
+              </p>
             </div>
           </div>
         </div>
