@@ -5,9 +5,9 @@ if (isset($_POST['btns'])){
     $email = mysqli_real_escape_string($mycon, $_POST['email']);
 
 
-$to = 'tcms@gmail.com';
+$to = "$email";
 $subject = 'Welcome Onboard';
-$from = "$email";
+$from = "tcms@gmail.com";
  
 // To send HTML mail, the Content-type header must be set
 $headers  = 'MIME-Version: 1.0' . "\r\n";
